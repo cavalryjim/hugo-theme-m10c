@@ -28,10 +28,6 @@
     <div class="post-content">
       {{ .Content }}
     </div>
-    <div class="post-footer">
-      {{ template "_internal/disqus.html" . }}
-    </div>
-
     <h4>Comments:</h4>
     <div id="cusdis_thread" data-host="https://cusdis.com"
       data-app-id="00693eb6-18f3-4176-b3ba-cf9245891bce"
@@ -40,6 +36,12 @@
       data-page-title="{{ .Title }}"
       data-theme="auto">
     </div>
+    <div class="post-footer">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+
+    
+    
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
   </article>
   
